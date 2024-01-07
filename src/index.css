@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "QuicksandLight";
+    src: local("QuicksandLight"),
+        url("./Fonts/Quicksand-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "QuicksandBold";
+    src: local("QuicksandBold"),
+        url("./Fonts/Quicksand-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "QuicksandMedium";
+    src: local("QuicksandMedium"),
+        url("./Fonts/Quicksand-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "QuicksandRegular";
+    src: local("QuicksandRegular"),
+        url("./Fonts/Quicksand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "QuicksandSemiBold";
+    src: local("QuicksandSemiBold"),
+        url("./Fonts/Quicksand-SemiBold.ttf") format("truetype");
+}
+
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: 'QuicksandRegular';
+}
+
+.input-text {
+    @apply p-4 text-sm text-primary rounded-lg focus-visible:ring-primary focus-visible:outline-secondary focus-visible:outline-1 focus-visible:outline-offset-0 focus-visible:outline focus-visible:shadow-dark-color focus:border-secondary  focus:ring-primary  placeholder:text-primary border-primary border-2 bg-transparent placeholder:opacity-100 focus:placeholder:opacity-0;
+    
+    /* dark mode */
+    @apply dark:text-primary-dark dark:focus-visible:ring-success dark:focus-visible:outline-success dark:focus-visible:shadow-light-color dark:focus:border-success dark:focus:ring-success dark:placeholder:text-primary-dark dark:border-primary-dark;
+}
+
+.darkmode-color-transition {
+    @apply transition-colors duration-700;
+}

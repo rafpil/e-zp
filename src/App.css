@@ -1,0 +1,10 @@
+.App {
+  @apply flex flex-col items-center text-primary;
+  
+  /* dark mode */
+  @apply dark:text-primary-dark;
+}
+
+abbr {
+  text-decoration: none;
+}

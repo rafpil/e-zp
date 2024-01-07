@@ -1,0 +1,42 @@
+.pagination {
+    @apply flex py-2 justify-end;
+}
+
+.pagination .page-selector {
+    @apply flex justify-center items-center  min-h-[2.5rem] min-w-[2.5rem] p-1;
+    @apply border-y-2 border-l-2 last:border-r-2 border-primary  first:rounded-l-lg last:rounded-r-md;
+    @apply cursor-pointer;
+    @apply transition-all;
+
+    /* dark mode */
+    @apply dark:border-primary-dark
+}
+
+.pagination .clickable-item {
+    @apply hover:bg-success hover:text-white hover:shadow-[0px_0px_30px_5px_rgba(0,0,0,0.2)] dark:hover:shadow-[0px_0px_30px_5px_rgba(255,255,255,0.2)];
+}
+
+.pagination .disable {
+    @apply dark:!text-gray-600 text-gray-300 !cursor-default;
+}
+
+.pagination .active {
+    @apply bg-secondary text-white font-bold;
+    @apply dark:bg-[#D3D3D3] dark:text-primary;
+}
+
+.pagination .wrap {
+    @apply flex w-[12.5rem] overflow-hidden relative;
+}
+
+.pagination .wrap .page-selector{
+    @apply rounded-none last:border-r-0;
+}
+
+.pagination .selectors {
+    @apply flex absolute;
+}
+
+/* .pagination .l {
+    @apply left-[-2.3rem];
+} */

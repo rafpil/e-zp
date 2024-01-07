@@ -1,0 +1,13 @@
+.darkmode {
+    @apply rounded-3xl h-7 w-14 md:h-10 md:w-20 flex justify-between items-center relative hover:cursor-pointer hover:bg-success hover:shadow-dark-color;
+    
+    /* dark mode */
+    @apply dark:border-primary-dark border-white border-2 dark:hover:shadow-light-color;
+}
+
+.darkmode .circles {
+    @apply rounded-[50%] h-5 w-5 md:h-8 md:w-8 absolute transition-all bg-white;
+    
+    /* dark mode */
+    @apply dark:bg-primary-dark;
+}

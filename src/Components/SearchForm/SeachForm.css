@@ -1,0 +1,19 @@
+.search-form {
+    @apply w-full py-4;
+}
+
+.search-form .search-label {
+    @apply mb-2 text-sm font-medium sr-only text-white;
+}
+
+.search-form .search-icon {
+    @apply absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none h-full w-10 dark:text-[#D3D3D3];
+}
+
+.search-form .search-input {
+    @apply block w-full p-4 pl-11;
+}
+
+.search-form .search-close {
+    @apply absolute right-[12px] top-1/2 -translate-y-2/4 text-error rounded-lg flex items-center justify-center h-5 w-5;
+}

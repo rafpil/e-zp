@@ -1,0 +1,10 @@
+.alert {
+    /* all mode */
+    @apply flex justify-center items-center p-4 mb-4 text-lg rounded-lg border-2 font-semibold;
+    
+    /* light mode */
+    @apply border-primary bg-waring;
+    
+    /* dark mode */
+    @apply dark:border-waring  dark:bg-transparent;
+}

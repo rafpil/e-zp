@@ -1,0 +1,12 @@
+.menu-items {
+    @apply flex justify-evenly w-full;
+}
+
+.menu-items li {
+    /* all mode */
+    @apply px-2 md:text-2xl  hover:[text-shadow:_1px_1px_20px_black] hover:text-success;
+    /* light mode */
+
+    /* dark mode */
+    @apply dark:hover:[text-shadow:_1px_1px_20px_#D3D3D3]
+}
